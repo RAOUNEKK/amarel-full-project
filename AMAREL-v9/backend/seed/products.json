@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Olive Velvet Lounge Armchair",
+    "description": "A mid-century lounge armchair in soft olive velvet with a slim walnut frame, made for long evenings with a book.",
+    "price": 38000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-01.jpg",
+    "stock": 7,
+    "badge": "Studio edit",
+    "bestseller": false
+  },
+  {
+    "name": "Sculpted Walnut Console",
+    "description": "A flowing walnut console with an open shelf for books and objects, finished by hand with a soft satin lacquer.",
+    "price": 62000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-02.jpg",
+    "stock": 10,
+    "badge": "New arrival",
+    "bestseller": false
+  },
+  {
+    "name": "Magnolia Petal Pendant",
+    "description": "A porcelain-white pendant shaped like an opening magnolia, with a leaf detail that softens the light above a table.",
+    "price": 24500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-03.jpg",
+    "stock": 13,
+    "badge": "New arrival",
+    "bestseller": true
+  },
+  {
+    "name": "Olive Sphere Coffee Table",
+    "description": "A glossy olive lacquer coffee table resting on three sculptural spheres, with a warm taupe top.",
+    "price": 45000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-04.jpg",
+    "stock": 16,
+    "badge": "New arrival",
+    "bestseller": false
+  },
+  {
+    "name": "Emerald Glass Tiered Chandelier",
+    "description": "A two-tier chandelier of hand-pressed green glass and brass, casting a jewel-like glow across the room.",
+    "price": 96000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-05.jpg",
+    "stock": 19,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Cloud Silk Pendant Lamp",
+    "description": "A pleated, petal-like shade that diffuses light into a calm, cloud-soft glow.",
+    "price": 18500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-06.jpg",
+    "stock": 5,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Walnut Crescent Lounge Chair",
+    "description": "A curved walnut shell chair with deep linen cushions, shaped to cradle you from every angle.",
+    "price": 84000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-07.jpg",
+    "stock": 8,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Rose Blossom Pendant",
+    "description": "A blown-glass pendant in blush and violet with a brass fitting, inspired by a flower in bloom.",
+    "price": 21000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-08.jpg",
+    "stock": 0,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Scarlet Velvet Petal Armchair",
+    "description": "A sculptural armchair in deep scarlet velvet whose petal-like back wraps around the sitter.",
+    "price": 72000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-09.jpg",
+    "stock": 14,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Blush Mushroom Table Lamp",
+    "description": "A glossy ceramic table lamp in blush and terracotta with a domed shade and brass finial.",
+    "price": 12500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-10.jpg",
+    "stock": 17,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Twisted Walnut Table Lamp",
+    "description": "A hand-turned walnut base with a spiral form, topped with a natural linen drum shade.",
+    "price": 19500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-11.jpg",
+    "stock": 20,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Botanical Ring Armchair",
+    "description": "A statement armchair on solid walnut rings, upholstered in a soft botanical print.",
+    "price": 68000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-12.jpg",
+    "stock": 6,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Rattan Arch Sideboard with Mirror",
+    "description": "A cream sideboard with woven rattan doors and four drawers, paired with an arched oak mirror.",
+    "price": 89000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-13.jpg",
+    "stock": 9,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Woven Rattan Pendant Duo",
+    "description": "Two hand-woven rattan pendants in different shapes that cast a warm, dappled light.",
+    "price": 16500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-14.jpg",
+    "stock": 12,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Wavy Gold-Frame Mirror",
+    "description": "An organic, softly rippled mirror framed in brushed gold, a quiet focal point for any wall.",
+    "price": 22000,
+    "category": "Décor",
+    "imageUrl": "/products/product-15.jpg",
+    "stock": 15,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Hollow Log Shell Chair",
+    "description": "A sculpted lounge chair carved from a single hollowed trunk and lined with a plush ivory cushion.",
+    "price": 125000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-16.jpg",
+    "stock": 18,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Sage Dining Set, Table & Four Chairs",
+    "description": "A round oak-veneer table on a pedestal base with four sage upholstered chairs and walnut arms.",
+    "price": 135000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-17.jpg",
+    "stock": 4,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Rose Fringe Pendant",
+    "description": "A two-tier pendant of dusty-rose fringe and brass rings that moves gently with the air.",
+    "price": 27500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-18.jpg",
+    "stock": 7,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Sculpted Oak Side Table",
+    "description": "A round oak side table with a turned, stacked base, ideal beside a sofa or reading chair.",
+    "price": 26000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-19.jpg",
+    "stock": 10,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Pearl Shade Beaded Table Lamp",
+    "description": "A table lamp with a glowing pleated shade and a stacked base of ceramic and brass beads.",
+    "price": 32000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-20.jpg",
+    "stock": 13,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Walnut Loop Coffee Table",
+    "description": "A low walnut coffee table with a loop-shaped silhouette and generous open storage.",
+    "price": 58000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-21.jpg",
+    "stock": 16,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Vienna Sofa",
+    "description": "A cream three-seater with softly rounded arms and a caramel wood base, designed for slow evenings.",
+    "price": 285000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-22.jpg",
+    "stock": 19,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Bubble-Leg Walnut Dining Chair",
+    "description": "A sculptural dining chair with a high walnut back, cream leather seat and four glossy sphere legs.",
+    "price": 42000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-23.jpg",
+    "stock": 8,
+    "badge": "New arrival",
+    "bestseller": false
+  },
+  {
+    "name": "Bordeaux Velvet Tubular Armchair",
+    "description": "A chrome tube frame wrapped with plump bordeaux velvet cushions, bold and surprisingly comfortable.",
+    "price": 78000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-24.jpg",
+    "stock": 6,
+    "badge": "New arrival",
+    "bestseller": true
+  },
+  {
+    "name": "Cobalt Pattern Lounge Chair",
+    "description": "A low, cloud-like lounge chair in a cobalt and ivory pattern on turned walnut feet.",
+    "price": 69000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-25.jpg",
+    "stock": 5,
+    "badge": "New arrival",
+    "bestseller": false
+  },
+  {
+    "name": "Trio of Metallic Bottle Vases",
+    "description": "Three tall bottle vases in brushed silver, gold and matt black, made to be grouped on a console.",
+    "price": 9500,
+    "category": "Décor",
+    "imageUrl": "/products/product-26.jpg",
+    "stock": 14,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Smoked Amber Glass Vase",
+    "description": "A mouth-blown glass vase with a softly dented shape and a smoky amber tint.",
+    "price": 6800,
+    "category": "Décor",
+    "imageUrl": "/products/product-27.jpg",
+    "stock": 20,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Rubber Plant in Ribbed Wood Planter",
+    "description": "A glossy-leaved rubber plant in a ribbed, light-to-dark wooden planter that adds height and life.",
+    "price": 7500,
+    "category": "Décor",
+    "imageUrl": "/products/product-28.jpg",
+    "stock": 11,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Chrome-Ball Botanical Armchair",
+    "description": "A playful armchair in mustard botanical jacquard resting on two polished chrome spheres.",
+    "price": 92000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-29.jpg",
+    "stock": 3,
+    "badge": "New arrival",
+    "bestseller": false
+  },
+  {
+    "name": "Olive Glass Disc Chandelier",
+    "description": "A brass-chained ceiling light ringed with pressed olive-green glass discs, in the spirit of 1960s design.",
+    "price": 74000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-30.jpg",
+    "stock": 7,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Striped Bouclé Sculptural Armchair",
+    "description": "A sculptural armchair with a burgundy backrest and striped bouclé seat and arms.",
+    "price": 81000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-31.jpg",
+    "stock": 6,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Amber Glass Side Table",
+    "description": "A round side table in translucent amber glass, built from interlocking panels on a slim base.",
+    "price": 34000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-32.jpg",
+    "stock": 9,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Pink Ribbed Glass Ceiling Light",
+    "description": "A ribbed rose-glass ceiling light on a brushed brass stem that gives a flattering, rosy glow.",
+    "price": 29000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-33.jpg",
+    "stock": 12,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Walnut Frame Leather Sofa",
+    "description": "A low-slung sofa with a solid walnut frame and deep chocolate leather cushions.",
+    "price": 245000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-34.jpg",
+    "stock": 4,
+    "badge": "",
+    "bestseller": true
+  },
+  {
+    "name": "Walnut Record Turntable",
+    "description": "A belt-drive turntable in a walnut plinth with a clear dust cover, for the listening corner.",
+    "price": 38000,
+    "category": "Décor",
+    "imageUrl": "/products/product-35.jpg",
+    "stock": 8,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Smoked Glass Candle Holder Set",
+    "description": "Three thick-walled glass holders in amber and smoked brown, each one slightly different.",
+    "price": 5800,
+    "category": "Décor",
+    "imageUrl": "/products/product-36.jpg",
+    "stock": 25,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Emerald Velvet Curved Sofa",
+    "description": "A three-seater with a fan-shaped back in emerald velvet and fine piping, a true centrepiece.",
+    "price": 310000,
+    "category": "Furniture",
+    "imageUrl": "/products/product-37.jpg",
+    "stock": 3,
+    "badge": "New arrival",
+    "bestseller": true
+  },
+  {
+    "name": "Etched Rose Glass Table Lamp",
+    "description": "A blush glass shade etched with flowers on a sage green base, with a gentle glow.",
+    "price": 23500,
+    "category": "Lighting",
+    "imageUrl": "/products/product-38.jpg",
+    "stock": 9,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Sea-Glass Ceramic Vase",
+    "description": "A ribbed ceramic vase with a crackled sea-green glaze and a gold-touched rim.",
+    "price": 4500,
+    "category": "Décor",
+    "imageUrl": "/products/product-39.jpg",
+    "stock": 18,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Cherry Red Squiggle Table Lamp",
+    "description": "A glossy cherry-red table lamp with a wavy stem and a half-dome shade, playful by day and warm by night.",
+    "price": 16000,
+    "category": "Lighting",
+    "imageUrl": "/products/product-40.jpg",
+    "stock": 15,
+    "badge": "New arrival",
+    "bestseller": true
+  },
+  {
+    "name": "Burgundy Ruffle Ceramic Vase",
+    "description": "A glazed burgundy vase with a ruffled rim and a softly fluted body.",
+    "price": 5200,
+    "category": "Décor",
+    "imageUrl": "/products/product-41.jpg",
+    "stock": 16,
+    "badge": "",
+    "bestseller": false
+  },
+  {
+    "name": "Navy Ring Vase Pair",
+    "description": "Two hand-finished matt navy ceramic ring vases in different sizes, sculptural with or without flowers.",
+    "price": 8200,
+    "category": "Décor",
+    "imageUrl": "/products/product-42.jpg",
+    "stock": 12,
+    "badge": "",
+    "bestseller": false
+  }
+]

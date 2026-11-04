@@ -1,0 +1,71 @@
+// Delivery fee per city (DA). Mirror of backend/src/config/delivery.js, keep both in sync.
+// The server recalculates the fee when the order is created, this copy only lets the
+// checkout show the full price before the order is sent. Amounts are placeholders.
+export interface DeliveryCity { city: string; fee: number }
+
+export const DELIVERY_CITIES: DeliveryCity[] = [
+  { city: "Alger", fee: 400 },
+  { city: "Blida", fee: 400 },
+  { city: "Boumerdès", fee: 400 },
+  { city: "Tipaza", fee: 400 },
+  { city: "Oran", fee: 600 },
+  { city: "Constantine", fee: 600 },
+  { city: "Annaba", fee: 600 },
+  { city: "Béjaïa", fee: 600 },
+  { city: "Tizi Ouzou", fee: 600 },
+  { city: "Sétif", fee: 600 },
+  { city: "Skikda", fee: 600 },
+  { city: "Jijel", fee: 600 },
+  { city: "Mostaganem", fee: 600 },
+  { city: "Chlef", fee: 600 },
+  { city: "Aïn Defla", fee: 600 },
+  { city: "Médéa", fee: 600 },
+  { city: "Bouira", fee: 600 },
+  { city: "Mila", fee: 600 },
+  { city: "Guelma", fee: 600 },
+  { city: "El Tarf", fee: 600 },
+  { city: "Souk Ahras", fee: 600 },
+  { city: "Tlemcen", fee: 600 },
+  { city: "Aïn Témouchent", fee: 600 },
+  { city: "Relizane", fee: 600 },
+  { city: "Mascara", fee: 600 },
+  { city: "Sidi Bel Abbès", fee: 600 },
+  { city: "Bordj Bou Arréridj", fee: 600 },
+  { city: "Batna", fee: 800 },
+  { city: "Biskra", fee: 800 },
+  { city: "Tébessa", fee: 800 },
+  { city: "Khenchela", fee: 800 },
+  { city: "Oum El Bouaghi", fee: 800 },
+  { city: "Djelfa", fee: 800 },
+  { city: "Laghouat", fee: 800 },
+  { city: "M'Sila", fee: 800 },
+  { city: "Tiaret", fee: 800 },
+  { city: "Tissemsilt", fee: 800 },
+  { city: "Saïda", fee: 800 },
+  { city: "Naâma", fee: 800 },
+  { city: "El Bayadh", fee: 800 },
+  { city: "Ouargla", fee: 800 },
+  { city: "Ghardaïa", fee: 800 },
+  { city: "El Oued", fee: 800 },
+  { city: "Béchar", fee: 1200 },
+  { city: "Adrar", fee: 1200 },
+  { city: "Tamanrasset", fee: 1200 },
+  { city: "Illizi", fee: 1200 },
+  { city: "Tindouf", fee: 1200 },
+  { city: "Timimoun", fee: 1200 },
+  { city: "Bordj Badji Mokhtar", fee: 1200 },
+  { city: "Ouled Djellal", fee: 1200 },
+  { city: "Béni Abbès", fee: 1200 },
+  { city: "In Salah", fee: 1200 },
+  { city: "In Guezzam", fee: 1200 },
+  { city: "Touggourt", fee: 1200 },
+  { city: "Djanet", fee: 1200 },
+  { city: "El M'Ghair", fee: 1200 },
+  { city: "El Meniaa", fee: 1200 },
+].sort((a, b) => a.city.localeCompare(b.city, "fr"));
+
+export const deliveryFeeFor = (city: string): number | null =>
+  DELIVERY_CITIES.find((c) => c.city === city)?.fee ?? null;
+
+// same rule as the backend
+export const isValidPhone = (v: string) => /^[0-9+\s().-]{8,20}$/.test(v.trim());
