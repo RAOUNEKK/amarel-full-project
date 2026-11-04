@@ -81,6 +81,28 @@ function Dashboard({ user, onLogout, onExpired }: { user: AuthUser; onLogout: ()
 
   useEffect(() => {
     allOrdersApi().then(setOrders).catch(fail);
+
+    // keep orders (and stock, which drops when an order is placed) up to date
+    // without a manual refresh: every 30 s, and when the admin returns to the tab.
+    // (the API allows 100 requests / 15 min per IP, so keep this to one request per tick;
+    // products are only reloaded when the number of orders changed)
+    let known = -1;
+    const refresh = () => {
+      if (document.hidden) return;
+      allOrdersApi()
+        .then((list) => {
+          setOrders(list);
+          if (known !== -1 && list.length !== known) fetchProducts().then((p) => dispatch(setProducts(p))).catch(() => {});
+          known = list.length;
+        })
+        .catch((err) => { if (err instanceof ApiError && err.status === 401) onExpired(); });
+    };
+    const timer = window.setInterval(refresh, 30000);
+    document.addEventListener("visibilitychange", refresh);
+    return () => {
+      window.clearInterval(timer);
+      document.removeEventListener("visibilitychange", refresh);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
