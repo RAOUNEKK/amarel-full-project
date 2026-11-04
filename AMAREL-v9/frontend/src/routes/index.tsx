@@ -1,8 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Play, Plus, Heart, RotateCcw } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Play, Heart, RotateCcw } from "lucide-react";
 import { useState } from "react";
 import { Hero } from "@/components/Hero";
-import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/ProductCard";
 import { CATEGORIES, type Category } from "@/data/products";
 import { useAppSelector } from "@/store/store";
@@ -195,7 +194,6 @@ function Home() {
           </div>
         </section>
 
-        <Newsletter />
       </div>
     </>
   );
@@ -216,37 +214,5 @@ function FeatureCard({ to, title, sub, dark = false, img }: { to: "/shop" | "/co
       </div>
       {img && <img src={img} alt="" loading="lazy" className="absolute top-3 right-3 bottom-3 w-[42%] rounded-2xl object-cover" />}
     </Link>
-  );
-}
-
-function Newsletter() {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "error" | "done">("idle");
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setState(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? "done" : "error");
-  };
-  return (
-    <section id="newsletter" className="mt-32 scroll-mt-24" aria-labelledby="newsletter-title">
-      <div className="grid items-center gap-8 rounded-3xl bg-card p-8 md:grid-cols-2 md:p-14">
-        <div>
-          <p className="eyebrow">The AMARÉL letter</p>
-          <h2 id="newsletter-title" className="mt-3 text-3xl font-light md:text-4xl">Slow living, in your inbox</h2>
-          <p className="mt-3 max-w-sm text-[0.75rem] leading-relaxed text-muted-foreground">Seasonal edits and early access. Demo form — nothing is sent.</p>
-        </div>
-        <div>
-          {state === "done" ? (
-            <p className="text-2xl font-light">Thank you — you're on the list.</p>
-          ) : (
-            <form onSubmit={submit} className="flex flex-col gap-3 sm:flex-row" noValidate>
-              <input value={email} onChange={(e) => { setEmail(e.target.value); setState("idle"); }} placeholder="you@example.com" aria-label="Email" className="input-glow" />
-              <button className="btn-glow justify-center"><Plus size={14} /> Subscribe</button>
-            </form>
-          )}
-          {state === "error" && <p className="mt-3 text-sm text-destructive">Please enter a valid email address.</p>}
-        </div>
-      </div>
-      <div className="mt-8 flex justify-center md:hidden"><Logo /></div>
-    </section>
   );
 }

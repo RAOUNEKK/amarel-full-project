@@ -154,8 +154,7 @@ export function Hero() {
             </li>
           </ul>
           <div className="mt-auto">
-            <p className="text-[0.625rem] leading-snug text-white/80">Get a discount for a subscription</p>
-            <div className="mt-4 flex gap-2">
+            <div className="flex gap-2">
               {[Instagram, Facebook, Twitter].map((I, k) => (
                 <span key={k} className="dot-btn !h-7 !w-7 !bg-black"><I size={12} /></span>
               ))}
@@ -178,10 +177,6 @@ export function Hero() {
               Go to the<br />online store
             </span>
           </Link>
-          <div className="mt-auto text-center">
-            <p className="text-[0.5625rem] leading-snug text-white/70">Join the letter to get a personal discount</p>
-            <a href="/#newsletter" className="mt-3 inline-flex w-full justify-center rounded-full bg-black py-2.5 text-[0.6875rem] text-white transition hover:bg-white hover:text-black">Subscribe</a>
-          </div>
         </div>
       </aside>
     </section>
