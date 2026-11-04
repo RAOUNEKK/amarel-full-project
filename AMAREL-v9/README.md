@@ -4,7 +4,7 @@
 
 **Live demo:** https://amarel-shop.vercel.app/
 **Owner dashboard:** https://amarel-shop.vercel.app/admin (admin login required)
-**Repository:** https://github.com/RAOUNEKK/amarel
+**Repository:** https://github.com/RAOUNEKK/amarel-full-project
 
 **Student:** Harizi Raounek Nour El Yakine (ENSTA), Systems Security
 **Course project:** WAMD TD-TP 3
