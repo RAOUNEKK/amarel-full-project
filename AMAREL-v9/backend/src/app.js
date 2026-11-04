@@ -8,7 +8,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const imageRoutes = require("./routes/imageRoutes");
 const { apiLimiter } = require("./middleware/rateLimiter");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-
+const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
 // needed so the rate limiter sees the real client IP behind a proxy (Render, etc.)
@@ -43,6 +43,7 @@ app.use("/api/products", productRoutes);
 app.use("/api", userDataRoutes); // /api/cart and /api/favorites
 app.use("/api/orders", orderRoutes);
 app.use("/api/images", imageRoutes);
+app.use("/api/contact", contactRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

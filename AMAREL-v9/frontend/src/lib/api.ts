@@ -247,3 +247,9 @@ export async function uploadImageApi(file: File): Promise<string> {
   if (!res.ok) throw new ApiError(res.status, data.message || "Upload failed");
   return imageSrc(data.url as string);
 }
+// ---- contact form ----
+
+// The backend emails the message to the store owner (through Resend).
+export async function sendContactApi(data: { name: string; email: string; message: string; website?: string }): Promise<void> {
+  await request<{ success: boolean }>("/api/contact", { method: "POST", body: JSON.stringify(data) });
+}
