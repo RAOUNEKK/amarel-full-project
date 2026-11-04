@@ -9,7 +9,7 @@ import { addProduct, deleteProduct, setProducts, updateProduct } from "@/store/c
 import { useUI } from "@/components/AppProviders";
 import { AuthForm } from "@/components/AuthForm";
 import {
-  ApiError, ORDER_STATUSES, allOrdersApi, createProductApi, deleteProductApi, fetchProducts, setOrderStatusApi,
+  ApiError, ORDER_STATUSES, allOrdersApi, createProductApi, deleteOrderApi, deleteProductApi, fetchProducts, setOrderStatusApi,
   updateProductApi, uploadImageApi, type AuthUser, type Order, type OrderStatus,
 } from "@/lib/api";
 
@@ -113,6 +113,19 @@ function Dashboard({ user, onLogout, onExpired }: { user: AuthUser; onLogout: ()
       toast.success(`Order ${o.number} is now ${status}`);
       // a cancelled order puts its items back in stock
       if (status === "Cancelled") dispatch(setProducts(await fetchProducts()));
+    } catch (err) { fail(err); }
+  };
+
+  // delete an order for good (orders that were not shipped yet put their items back in stock)
+  const removeOrder = async (o: Order) => {
+    const restock = o.status === "Pending" || o.status === "Processing";
+    const warning = restock ? " The items will be put back in stock." : "";
+    if (!confirm(`Delete order ${o.number}? This cannot be undone.${warning}`)) return;
+    try {
+      await deleteOrderApi(o.id);
+      setOrders((list) => list.filter((x) => x.id !== o.id));
+      toast("Order deleted");
+      if (restock) dispatch(setProducts(await fetchProducts()));
     } catch (err) { fail(err); }
   };
 
@@ -234,6 +247,7 @@ function Dashboard({ user, onLogout, onExpired }: { user: AuthUser; onLogout: ()
                     <select value={o.status} disabled={o.status === "Cancelled"} aria-label={`Status for ${o.number}`} onChange={(e) => changeStatus(o, e.target.value as OrderStatus)} className="input-glow !w-36 !rounded-lg !py-1.5">
                       {ORDER_STATUSES.map((st) => <option key={st}>{st}</option>)}
                     </select>
+                    <button onClick={() => removeOrder(o)} aria-label={`Delete order ${o.number}`} title="Delete this order" className="ml-2 p-2 align-middle hover:text-destructive"><Trash2 size={16} /></button>
                   </td>
                 </tr>
               ))}

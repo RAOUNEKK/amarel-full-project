@@ -161,3 +161,18 @@ exports.updateStatus = async (req, res, next) => {
     next(err);
   }
 };
+// admin only: delete an order for good
+exports.deleteOrder = async (req, res, next) => {
+  try {
+    if (!mongoose.isValidObjectId(req.params.id)) throw new ApiError(400, `Invalid order id: ${req.params.id}`);
+    // delete first (atomic), so the stock can never be given back twice
+    const order = await Order.findByIdAndDelete(req.params.id);
+    if (!order) throw new ApiError(404, "Order not found");
+    // an order that was never shipped puts its items back on the shelf.
+    // Cancelled orders already did it, and shipped/delivered ones have left the shop.
+    if (order.status === "Pending" || order.status === "Processing") await giveStockBack(order.items);
+    res.status(200).json({ success: true, message: "Order deleted" });
+  } catch (err) {
+    next(err);
+  }
+};

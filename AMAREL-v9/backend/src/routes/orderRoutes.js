@@ -13,5 +13,5 @@ router.get("/mine", protect, ctrl.myOrders);
 router.get("/", protect, requireAdmin, ctrl.allOrders);
 router.get("/:id", protect, ctrl.getOrder);
 router.patch("/:id/status", protect, requireAdmin, ctrl.updateStatus);
-
+router.delete("/:id", protect, requireAdmin, ctrl.deleteOrder);
 module.exports = router;
